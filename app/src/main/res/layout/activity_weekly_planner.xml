@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Workout Plan"
+            android:textColor="#A4FF33"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Monday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Tuesday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerTue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Wednesday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerWed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Thursday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Friday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerFri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Saturday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerSat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Sunday" android:textColor="#FFFFFF" android:textSize="18sp" />
+            <TextView android:id="@+id/spinnerSun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_green_box"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Rest Day"
+                android:textColor="#121212"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Weekly Plan"
+            android:backgroundTint="#A4FF33"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+</ScrollView>

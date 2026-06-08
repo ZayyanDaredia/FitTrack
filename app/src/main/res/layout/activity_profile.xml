@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gym_black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gym_black"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="My Profile"
+        app:titleTextColor="@color/gym_neon_green"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/btnEditProfile"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_placeholder_user"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    app:strokeColor="@color/gym_neon_green"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnChangePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ivProfilePic"
+                    android:layout_alignEnd="@id/ivProfilePic"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_camera"
+                    app:tint="@color/gym_black"
+                    app:backgroundTint="@color/gym_neon_green" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvProfileUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@username"
+                android:textColor="@color/gym_neon_green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="32dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1AFFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="ACCOUNT INFORMATION"
+                android:textColor="@color/grey_text"
+                android:letterSpacing="0.1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full Name" android:textColor="@color/grey_text" android:textSize="12sp"/>
+                <TextView android:id="@+id/tvProfileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Zayyan" android:textColor="@color/white" android:textSize="18sp" android:paddingVertical="8dp" android:layout_marginBottom="12dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Address" android:textColor="@color/grey_text" android:textSize="12sp"/>
+                <TextView android:id="@+id/tvProfileEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="user7@gmail.com" android:textColor="@color/white" android:textSize="18sp" android:paddingVertical="8dp" android:layout_marginBottom="12dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age" android:textColor="@color/grey_text" android:textSize="12sp"/>
+                <TextView android:id="@+id/tvProfileAge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="21 Years" android:textColor="@color/white" android:textSize="18sp" android:paddingVertical="8dp" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="2">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Height" android:textColor="@color/grey_text" android:textSize="12sp"/>
+                        <TextView android:id="@+id/tvProfileHeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="175 cm" android:textColor="@color/white" android:textSize="18sp" android:paddingVertical="8dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weight" android:textColor="@color/grey_text" android:textSize="12sp"/>
+                        <TextView android:id="@+id/tvProfileWeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="70 kg" android:textColor="@color/white" android:textSize="18sp" android:paddingVertical="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="#1AFFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:text="EDIT PROFILE"
+        android:textColor="@color/gym_black"
+        android:textStyle="bold"
+        app:backgroundTint="@color/gym_neon_green"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

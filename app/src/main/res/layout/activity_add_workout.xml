@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvAddWorkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD WORKOUT"
+            android:textColor="#A4FF33"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Muscle Groups"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:alpha="0.7"
+            android:layout_marginBottom="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins">
+
+            <CheckBox android:id="@+id/cbChest" android:text="Chest" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbTriceps" android:text="Triceps" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbBack" android:text="Back" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbBiceps" android:text="Biceps" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbShoulders" android:text="Shoulders" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbLegs" android:text="Legs" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbCore" android:text="Core" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+            <CheckBox android:id="@+id/cbCardio" android:text="Cardio" android:textColor="#FFFFFF" android:buttonTint="#A4FF33" android:layout_columnWeight="1"/>
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/container_exercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnAddMore"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add More Exercises"
+            android:textColor="#A4FF33"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnSaveWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="SAVE WORKOUT"
+            android:backgroundTint="#A4FF33"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

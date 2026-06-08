@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menu_profile" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="Workouts">
+        <menu>
+            <group android:id="@+id/menu_main" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_add_workout"
+                    android:icon="@drawable/ic_add"
+                    android:title="Add Workout" />
+                <item
+                    android:id="@+id/nav_suggested"
+                    android:icon="@drawable/ic_suggest"
+                    android:title="Suggested Workout" />
+                <item
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/ic_history"
+                    android:title="View History" />
+                <item
+                    android:id="@+id/nav_report"
+                    android:icon="@drawable/ic_report"
+                    android:title="Summary Report" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Nutrition &amp; Shop">
+        <menu>
+            <group android:id="@+id/menu_extra" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calories"
+                    android:icon="@drawable/ic_calories"
+                    android:title="Calorie Tracking" />
+                <item
+                    android:id="@+id/nav_supplements"
+                    android:icon="@drawable/ic_shop"
+                    android:title="Supplement Shop" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <group android:id="@+id/menu_support" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_issue"
+                    android:icon="@drawable/ic_issue"
+                    android:title="Report An Issue" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
